@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kreator Pizzy</title>
+</head>
+<body>
+    <div class="kontener">
+        <h2>Kreator pizzy</h2>
+        <form action="?">
+            <div style="width: 350px;">
+                <fieldset>
+                    <legend>Rozmiar:</legend>
+                    <input type="radio" name="mala" id="mala">Mała
+                    <input type="radio" name="srednia" id="srednia">Średnia
+                    <input type="radio" name="duza" id="duza">Duża
+                </fieldset>
+                <fieldset>
+                    <legend>Dodatki:</legend>
+                    <div>
+                        <input type="checkbox" name="szynka" id="szynka">Szynka<br>
+                        <input type="checkbox" name="salami" id="salami">Salami<br>
+                        <input type="checkbox" name="boczek" id="boczek">Boczek<br>
+                        <input type="checkbox" name="papryka" id="papryka">Papryka<br>
+                        <input type="checkbox" name="pomidor" id="pomidor">Pomidor<br>
+                        <input type="checkbox" name="ser" id="ser">Ser<br>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Sosy:</legend>
+                    <div style="display: flex;">
+                    <p style="margin: 0px 20px 0px 0px;">Wybierz sos:</p>
+                    <select name="sos" id="sos">
+                        <option value="ketchup">Ketchup</option>
+                        <option value="pomidorowy">Pomidorowy</option>
+                        <option value="czosnkowy">Czosnkowy</option>
+                        <option value="amerykanski">Amerykanski</option>
+                    </select>
+                    </div>
+                    <div style="display: flex; padding: 20px 0px;">
+                        <p  style="margin: 0px 20px 0px 0px;display: flex; align-items: center;">Inne uwagi:</p>
+                        <textarea name="uwagi" id="uwagi" cols="30" rows="10" style="width: 150px; height: 50px; max-width: 200px; min-width: 150px;"></textarea>
+                    </div>
+                </fieldset>
+                <div style="padding: 10px 0px;">
+                    <input type="reset" value="Wyczyść dane" style="margin-right: 10px;">
+                    <input type="submit" value="Wyślij zamówienie">
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
