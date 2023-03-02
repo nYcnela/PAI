@@ -4,7 +4,7 @@
 4. Wyjaśnij pojęcie klasy i wyjątku w CSS? Jakie atrybuty odpowiadają im w elemencie 
 HTML?
 
-<======odpowiedzi======>
+<======Odpowiedzi======>
 1. Ogólnie są trzy reguły: 
     1) dołączanie bezpośrednio w sekcji head za pomocą znacznika style, CSS będzie miał zastosowanie do całego dokumentu
     2) dołączanie za pomocą zewnętrznego pliku CSS za pomocą atrubuty "href" w sekcji head
