@@ -1,0 +1,25 @@
+1. W jaki sposób można dołączać reguły CSS do dokumentu HTML?
+2. Podaj przykłady selektorów i deskryptorów stosowanych w arkuszu CSS.
+3. Co to jest Box Model? 
+4. Wyjaśnij pojęcie klasy i wyjątku w CSS? Jakie atrybuty odpowiadają im w elemencie 
+HTML?
+
+<======odpowiedzi======>
+1. Ogólnie są trzy reguły: 
+    1) dołączanie bezpośrednio w sekcji head za pomocą znacznika style, CSS będzie miał zastosowanie do całego dokumentu
+    2) dołączanie za pomocą zewnętrznego pliku CSS za pomocą atrubuty "href" w sekcji head
+    3) dołączenie reguł CSS bezpośrednio do elementów HTML za pomocą atrybutu "style", reguły będą miały zastosowanie tylko dla danego elementu
+-------------------------------------------------------------
+2.Przykład:
+p{
+    color: blue;
+    font-size: 16px;
+}
+Tutaj  "p" jest selektorem, informuje jakie elementy bedziemy stylować, natomiast deskryptor to "color i font size" informuja nas o tym jakie style zostaną zastosowane na wybrane selektory
+-------------------------------------------------------------
+3.Box model to model wizualizcji elementów HTML w przeglądarce. Każdy element HTML traktowany jest jako prostokąt, który składa się z czterech podstawowych elementów: content, padding, border, margin
+-------------------------------------------------------------
+4. 
+-Klasa to atrybut, który pozwala grupować elementy o podobnym stylu. Klasa jest definiowana w arkuszu CSS i może być użyta do wielu elementów HTML na stronie. Aby wybrać element z klasą CSS, używa się kropki przed nazwą klasy np ".nazwa-klasy". Dzieki klasom możemy łatwo zmienić styl wszystkich elementów o tej samej klasie za pomocą jednego zapisu CSS
+
+-Wyjątek (ID) jest podobnym atrybutem ale służy do identyfikacji konkretnego elementu na stonie. Każdy ID na stronie musi być unikalny. Aby wybrać element z wyjątkiem w CSS, używa się znaku "#" np "#nazwa-wyjątku". Dzięki wyjątkom możemy szybko i łatwo stylizować pojedyńcze elementy na stronie
