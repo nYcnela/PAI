@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formularze</title>
-    <link rel="stylesheet" href="../CSS/style.css" type="text/css">
+    <link rel="stylesheet" href="../CSS/formularze.css" type="text/css">
 </head>
 <body>
     <div class="kontener">
@@ -13,8 +13,8 @@
             <h2>Szybki kurs HTML</h2>
         </div>
         <div id="menu">
-            <a style="padding-right: 10px;" href="./index.html">Postawowe znaczniki</a>
-            <a style="padding-right: 10px;" href="./tabele.html">Tworzenie tabel</a>
+            <a href="./index.html">Postawowe znaczniki</a>
+            <a href="./tabele.html">Tworzenie tabel</a>
             <a href="./formularze.html">Budowa Formularzy</a>
         </div>
         <div id="tresc">
@@ -28,24 +28,34 @@
             </ul>
             <h3>Przykładowy formularz HTML:</h3>
             <form action="mailto:test@test.com" method="post">
-                Nazwisko: <input type="text" name="login" style="margin-left: 15px;"> <br>
-                Wiek: <input type="text" name="password" style="margin-left: 45px;"> <br>
-                Państwo:<select name="panstwo" id="panstwo" style="margin-left: 29px;">
+                <label for="nazwisko">Nazwisko:</label>
+                <input type="text" name="login"> <br>
+                <label for="wiek">Wiek:</label> 
+                <input type="text" name="password"> <br>
+                <label for="panstwo">Państwo:</label>
+                <select name="panstwo" id="panstwo">
                     <option value="polska">Polska</option>
                     <option value="anglia">Anglia</option>
                     <option value="francja">Francja</option>
                     <option value="niemcy">Niemcy</option>
                 </select><br>
-                Adres e-mail:<input type="text" name="email"> <br>
+                <label for="email">Adres e-mail:</label>
+                <input type="text" name="email"> <br>
                 
                 <h4>Zamawiam tutorial z języka:</h4>
-                <input type="checkbox" name="php" id="php">php
-                <input type="checkbox" name="c" id="c">C/C++
-                <input type="checkbox" name="java" id="java">Java
+                <input type="checkbox" name="php" id="php">
+                <label for="php">Php</label>
+                <input type="checkbox" name="c" id="c">
+                <label for="cpp">C/C++</label>
+                <input type="checkbox" name="java" id="java">
+                <label for="java">Java</label>
                 <h4>Sposób zapłaty</h4>
-                <input type="radio" name="eurocard" id="eurocard">eurocard
-                <input type="radio" name="visa" id="visa">visa
-                <input type="radio" name="przelew" id="przelwe">przelew bankowy
+                <input type="radio" name="eurocard" id="eurocard">
+                <label for="eurocard">eurocard</label>
+                <input type="radio" name="visa" id="visa">
+                <label for="visa">visa</label>
+                <input type="radio" name="przelew" id="przelwe">
+                <label for="przelewBankowy">przelew bankowy</label>
                 <br>
                 <input style="margin-right: 5px;"type="submit" value="Wyślij">
                 <input type="reset" value="Anuluj">
