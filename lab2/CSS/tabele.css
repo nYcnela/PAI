@@ -1,0 +1,36 @@
+/*ustawienia dla całej tabeli*/
+table{
+    background:#ffffb3;
+    text-align:center;
+    width:94%;
+    margin:2%;
+    border:1pt solid #000040;
+}
+/*ustawienie tytułu tabeli*/
+caption {
+    font-size:120%;
+    font-weight: bold;
+}
+/*formatownanie części nagłówkowej i stopki tabeli*/
+tfoot, thead {
+    background:#0000a0;
+    color:#ffffff;
+    font-size:110%;
+    padding: 5pt;
+}
+/*formatowanie pojedyńczych komórek zwykłych i nagłówkowych*/
+td, th {
+    border:1pt solid #000040;
+}
+/*formatowanie elementu <a> zawartego w elementcie <tfoot>*/
+tfoot a {
+    color:#ffffff;
+}
+/*defonicja klasy o nazwie parzysty - można ją zastosować dla dowolnego znacznika w dokumencie html podając atrybut class = "parzysty" */
+*.parzysty{
+    background: #ffffff;
+}
+/*dodawanie przestrzeni pomiedzy hiperłączmi dla el. <a> zawartefo w elemencie o id "menu"*/
+#menu  a{
+    padding-right: 10px;
+}
