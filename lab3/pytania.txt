@@ -1,0 +1,34 @@
+1. Czym różni się naturalny układ elementów blokowych i liniowych?
+2. Na czym polega pozycjonowanie elementów strony HTML?
+3. Podaj przykładowe metody stosowane do budowy układów kolumnowych.
+4. O czym należy pamiętać określając szerokość elementu za pomocą właściwości 
+width?
+
+<======Odpowiedzi======>
+1.
+Elementy blokowe zajmują całą dostępną szerekość na stornie i zaczynają się od nowej linii. Są to np: h, p, ul,ol
+Elementy liniowe zajmują tyle miejsa ile potrzebują aby pomieścić swoją zawartość i wyświetlane są obok siebie np: span, a, img, button. Nie można zmieniać ich szerokości, ale można je stylowac 
+Wyjątkiem jest element inliniem dlatego ze można go traktować jako element liniowy, natomiast można zmieniać jego szerokość
+-------------------------------------------------------------
+2.
+Pozycjonowanie elementów polega na określeniu ich położenia względem innych elementów na stronie. Wyrożnia się
+    1)Pozycjonowanie statyczne, el. występują w takiej kolejności w jakiej zostały zapisane w kodzie
+    2)Pozycjonowanie relatywne. Elementy przesuwane są względem ich pierwotnego położenia. Przesunięcie to nie wpływa na położenie innych elementów
+    3)Pozycjonowanie absolutne. Elementy są umieszczane w określonej pozycji na stronie, niezależnie od innych elementów. Pozycja  ta określana jest za pomocą właściwości CSS, takich jak "top", "bottom", "left", "right"
+Pozycjonowanie jest ważne dla projektowania responsywnych i estetycznych stron internetowych
+-------------------------------------------------------------
+3. 
+Jedną z przykładowych metod stosowanych do budowy układów kolumnowych jest "display: flex" za pomocą tej właściwości można łatwo zmieniać ujład elementów na stronie z blokowego na kolumnowy
+
+Można wykorzystać framework CSS'a jak np bootstrap
+
+Można użyć właściwości CSS'a "grid", która pozwala na tworzenie zaawansowanych układów kolumnowych z łatwością, umożliwia precyzyjne pozycjonowanie elementów na stronie
+
+Ostatnią metoda jest metoda "float", polega na ustawieniu elementów w odpowiedni sposób za pomocą właściwości CSS float. Pozwala na ustawienie elementów obok siebie z określonym odstępem między nimi
+-------------------------------------------------------------
+4.
+    1) Po poadniu szerokości element ten staje się sztywny i nie dopasowywuje się automatycznie do szerokości okna przeglądarki
+    2) Szerokość elementu może być podawana w różnych jednostkach np: piksele, procenty, em, rem
+    3) W przypadku elementów blokowych jeśli ich łączna szerokość jest większ niż szerekość rodzica to mogą wystąpić problemy z wyświetlaniem lub przekroczeniem mamrginesów, Aby temu zapobiec można użyć technik takihc jak flexbox lub grid, które pozwalają na łatwe i elestyczne zarządzanie układem elementów
+    4) W przypadku elementów inline właściwość widt może być używana do zmiany ich rozmiaru ale warto pamiętać że może to wpłynąć na proporcje obrazka i spowodować jego zniekształecenie. Lepiej w takim przypadku użyć właściwości max-width, która pozwala na automatyczne dopasowanie elemetu do szerokości rodzica, ale z zachowaniem proporcji
+
