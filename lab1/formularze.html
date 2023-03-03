@@ -8,14 +8,16 @@
 </head>
 <body>
     <div class="kontener">
-        <div id="baner"><h2>Szybki kurs HTML</h2></div>
-        <div id="menu" style="display: flex;">
-            <a style="padding-right: 10px;" href="./index.html"><p>Postawowe znaczniki</p></a>
-            <a style="padding-right: 10px;" href="./tabele.html"><p>Tworzenie tabel</p></a>
-            <a style="padding-right: 10px;" href="./formularze.html"><p>Budowa Formularzy</p></a>
+        <div id="baner">
+            <h2>Szybki kurs HTML</h2>
         </div>
-        <div id="tresc"><h3>Podstawowe znaczniki HTML to:</h3></div>
-        <div>
+        <div id="menu">
+            <a href="./index.html">Postawowe znaczniki</a>
+            <a href="./tabele.html">Tworzenie tabel</a>
+            <a href="./formularze.html">Budowa Formularzy</a>
+        </div>
+        <div id="tresc">
+            <h3>Podstawowe znaczniki formularza to:</h3>
             <ul>
                 <li>&lt;form&gt; - znacznik podstawowy zawierający pola formularza</li>
                 <li>&lt;input&gt; - znacznik umożliwia wstawianie różnych pól (pole tekstowe, przycisk typu radio, przycisk typu checkbox) w w zależności od wartości jego atrybutu type</li>
@@ -24,30 +26,18 @@
                 <li>&lt;button&gt; - pole formularza typu przycisk</li>
             </ul>
             <h3>Przykładowy formularz HTML:</h3>
-        </div>
-        <div>
             <form action="mailto:test@test.com" method="post">
-                <div style="display: flex;">
-                    <p style="margin: 0; width: 100px;">Nazwisko:</p>
-                    <input type="text" name="login"> <br>
-                </div>
-                <div style="display: flex;">
-                    <p style="margin: 0; width: 100px;">Wiek:</p>
-                    <input type="text" name="password"> <br>
-                </div>
-                <div style="display: flex;">
-                    <p style="margin: 0; width: 100px;">Panstwo:</p>
-                    <select name="panstwo" id="panstwo" style="width: 90px;">
-                        <option value="polska">Polska</option>
-                        <option value="anglia">Anglia</option>
-                        <option value="francja">Francja</option>
-                        <option value="niemcy">Niemcy</option>
-                    </select>
-                </div>
-                <div style="display: flex;">
-                    <p style="margin: 0; width: 100px;">Adres e-mail:</p>
-                    <input type="text" name="email"> <br>
-                </div>
+                Nazwisko: <input type="text" name="login" style="margin-left: 15px;"> <br>
+                Wiek: <input type="text" name="password" style="margin-left: 45px;"> <br>
+                Państwo:<select name="panstwo" id="panstwo" style="margin-left: 29px;">
+                    <option value="polska">Polska</option>
+                    <option value="anglia">Anglia</option>
+                    <option value="francja">Francja</option>
+                    <option value="niemcy">Niemcy</option>
+                </select>
+                <br>
+                Adres e-mail:<input type="text" name="email"> <br>
+                
                 <h4>Zamawiam tutorial z języka:</h4>
                 <input type="checkbox" name="php" id="php">php
                 <input type="checkbox" name="c" id="c">C/C++
@@ -56,15 +46,13 @@
                 <input type="radio" name="eurocard" id="eurocard">eurocard
                 <input type="radio" name="visa" id="visa">visa
                 <input type="radio" name="przelew" id="przelwe">przelew bankowy
-                <div style="display: flex;">
+                <br>
                 <input style="margin-right: 5px;"type="submit" value="Wyślij">
                 <input type="reset" value="Anuluj">
             </form>
         </div>
-    
-
         <br>
-        <div class="stopka">&copy;BP</div>
+        <div id="stopka">&copy;BP</div>
     </div>
 </body>
 </html>
