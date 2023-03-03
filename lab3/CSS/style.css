@@ -1,0 +1,119 @@
+
+body {
+    background-color: #4ae;
+    color: #000040;
+}
+
+#kontener{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,0%);
+    width: 90%;
+    background-color: #ffffff;
+}
+h1,h2, #stopka{
+    margin: 0;
+    background: #000040;
+    color: #8080ff;
+    text-align: center
+}
+#menu{
+    float: left;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: #fff;
+    border-bottom: 2px solid #0000a0;
+}
+
+#tresc{
+    float: left;
+    width:75%;
+    padding: 1%;
+    background-color: #b6d0e4;
+}
+#pasek{
+    float: right;
+    width: 20%;
+    padding: 1%;
+}
+#menu li{
+    float: left;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    padding-right: 3px;
+    font-size: 85%;
+}
+/* #menu  a{
+    float: left;
+    margin: 0;
+    padding: 4px 8px;
+    background-color: #0000a0;
+    color: #ffffff;
+    text-decoration: none;
+    border: 1px solid #0000c6;
+}
+#menu a:hover{
+    border-left-color: #0000d5;
+    color: #ffffff;
+    text-decoration: none;
+} */
+#stopka{
+    width: 100%;
+    padding: 5px 0px 5px 0px;
+    clear: both;
+    text-align: center;
+}
+h3{
+    margin: 0;
+}
+*.box{
+    padding: 5px;
+    margin: 5px;
+    background: #0000a0;
+    color: #dbffff;
+    font-size: 90%;
+}
+/*hiperłącza w elementach klasy box*/
+*.box a{
+    color: #ffffb0;
+}
+#nav{
+    text-align: left;
+    overflow: hidden;
+    font-family: calibri, tahoma;
+}
+ul#nav li{
+    border: 1px solid #d5d5d5;
+    list-style-type: none;
+    float: left;
+    background: #98bed8;
+    margin-left: 3px;
+}
+ul#nav li:hover{
+    border: 1px solid #d5d5d5;
+    list-style-type: none;
+    float: left;
+    background: #f0f0f0;
+    margin-left: 3px;
+}
+ul#nav li a{
+    display: block;
+    padding: 4pt;
+    text-decoration: none;
+}
+ul#nav li li a{
+    width: 160px;
+}
+ul#nav li ul{
+    overflow: hidden;
+    display: none;
+}
+ul#nav li:hover ul{
+    position: absolute;
+    background: #aaa;
+    padding: 0;
+    display: block;
+    width: 177px;
+}
