@@ -1,0 +1,21 @@
+#beneficjent{
+    margin-left: 30px;
+}
+#wartoscDotacji{
+    margin-left: 4px;
+}
+#numer{
+    margin-left: 60px;
+}
+#dataWaznosci{
+    margin-left: 11px;
+}
+#kodCvv{
+    margin-left: 40px;
+}
+#darczynca{
+    margin-left: 50px;
+}
+.kontener{
+    width: 600px;
+}

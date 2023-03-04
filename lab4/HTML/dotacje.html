@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dotacja</title>
+    <link rel="stylesheet" href="../dotacje.css">
+</head>
+<body>
+    <div class="kontener">
+        <h2>Formularz dotacji</h2>
+        <form action="">
+            <fieldset>
+                <label for="beneficjent">Beneficjent:</label>
+                <input type="text" name="beneficjent" id="beneficjent" list="organizacje" required><br>
+                <datalist id="organizacje">
+                    <option value="Wioski dziecięce SOS"></option>
+                    <option value="Stowarzyszenie Pomoc Bezdomnym"></option>
+                    <option value="Polski Czerwony Krzyż"></option>
+                    <option value="Caritas Polska"></option>
+                </datalist>
+                <label for="wartoscDotacji">Wartość dotacji:</label>
+                <input type="number" name="wartoscDotacji" id="wartoscDotacji" min="20" step="10" required>
+            </fieldset>
+            <fieldset>
+                <legend>Dane karty płatniczej</legend>
+                <label for="platnosc">Karta:</label>
+                <input type="radio" name="platnosc" id="visa" value="Visa"> Visa
+                <input type="radio" name="platnosc" id="masterCard" value="Master Card">Master Card<br>
+                <label for="karta">Numer:</label> 
+                <input type="text" name="numer" id="numer" pattern="^(\d{13}|\d{16})$"><br>
+                <label for="karta">Data ważności:</label>
+                <input type="date" name="karta" id="dataWaznosci"> <br>
+                <label for="karta">Kod CVV: </label>
+                <input type="text" name="karta" id="kodCvv" pattern="^(\d{3}|\d{4})$">
+            </fieldset>
+            <label for="darczynca">Darczyńca:</label>
+            <input type="text" name="darczynca" id="darczynca" pattern="^[a-zA-Z]{3,}$"><br>
+            <input type="submit" name="zatwierdz" id="zatwierdz" value="Rejestruj">
+            <input type="reset" name="anuluj" id="anuluj" value="Anuluj">
+        </form>
+    </div>
+</body>
+</html>
