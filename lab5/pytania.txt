@@ -1,0 +1,28 @@
+1. Jakie znasz elementy struktury strony HTML
+2. Co to jest zapytanie o media i w jaki sposób się je definiuje
+3. Rozwiń skrót RWD i wyjaśnij na czym polega responsywność stron internetowych
+
+<======Odpowiedzi======>
+1.  
+    1) Nagłówek
+    2) Treść (content)
+    3) Pasek poboczny (sidebar)
+    4) Stopka
+    5) Formularze 
+    6) Slider - to sekcja która wyświetla miniature obrazów lub zdjęć w postci poziomych lub pionowych slajdów
+    7) Galeria
+    8) Tabela
+    9) Lista
+    10) Komunikaty
+-------------------------------------------------------------
+2.
+    Zapytanie o media to mechanizm umożliwiający dostosowywanie wyglądu strony internetowej do różnych warunków ekranu, takich jak rozmiar, rozdzielczość, orientacja ekranu i wiele innych. Dzięki zapytaniom o media możliwe jest np: zmienianie układu storny w zależnośći od szerokośći ekranu urządzenia, wyświetlanie różnych wersji obrazków w zależności od ich rozdzielczości, czy też wyświetlanie innego tekstu w zależnośći od jęyka urządzenia. Przykład takiego zapytania:
+
+    @media (max-width: 758px){
+        body{
+            color: yellow;
+        }
+    }
+-------------------------------------------------------------
+3. 
+    Responsive Web Desing czyli responsywny projekt strony internetowej. Responsywność oznacza, że strona internetowa dostosowuje się automatycznie do różnych rozmiarów ekranów urządzeń, takich jak komputery desktopowe, laptopy, tablety i smartfony
