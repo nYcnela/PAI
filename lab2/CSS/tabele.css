@@ -13,10 +13,10 @@ caption {
 }
 /*formatownanie części nagłówkowej i stopki tabeli*/
 tfoot, thead {
+    padding: 5pt;
     background:#0000a0;
     color:#ffffff;
     font-size:110%;
-    padding: 5pt;
 }
 /*formatowanie pojedyńczych komórek zwykłych i nagłówkowych*/
 td, th {
