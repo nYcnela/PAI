@@ -1,0 +1,50 @@
+1. Podaj typ pól formularzy oraz ich atrybuty pomocne w procesie sprawdzania poprawności przesyłania danych
+2. Co to jest wyrażenie regularne? Podaj przykładowych
+3. Do czego służy atrybut pattern w polu <input>?
+
+<======Odpowiedzi======>
+1. 
+    1)Pole tekstowe (input type="text") - umożliwia wprowadzenie przez użytkownika pojedyńczej lini tekstu. Atrybuty, które mogą być przydatne w procesie sprawdzania poprawniści to:
+        -required: określa, czy pole jest wymagane
+        -minlenght: minimalna ilość znaków
+        -maxlength: maksymalna ilość znaków
+        -pattern: wzorzec, który musi być spełniony przez wprowadzony tekst
+    
+    2) Pola email (input type="email") - umożliwia wprowadzenie przez użytkownika adresu e-mail. Atrybuty, które mogą być przydatne w procesie sprawdzania poprawności to:
+        -required: określa, czy pole jest wymagane
+        -pattern: wzorzec, który musi być spełniony przez wprowadzany adres e-mail
+    
+    3) Pole hasło (input type="password") - umożliwia wprowadzenie przez użytkownika hasła. Atrybuty, które mogą być przydatne w procesie sprawdzania poprawności to:
+        -required: określa, czy wybór jest wymagany
+        -minlenght: minimalna ilość znaków
+        -pattern: wzorzec, który musi być spełniony przez wprowadzony tekst
+
+    4) Pole wyboru (select) - umożliwia wybór jednej z kilku opcji, Atrybuty, które mogą być przydatne w procesie sprawdzania poprawności to:
+        -required: określa, czy wybór jest wymagany
+        -multiple - umożliwia wybór wielu opcji
+        -size: określenie liczby wyświetlanych opcji
+        -option value: przypisanie wartości do wybranej opcji
+        
+    5) Pole znacznika (input type="checkbox") - umożliwia zaznaczenie jednej lub kilku opcji. Atrybuty, które mogą być przydatne w procesie sprawdzania poprawności to:
+        -required: określa, czy wybór jest wymagany
+        -name: przypisanie polom checkbox tej samej nazwy, aby można było wybrać wiele opcji
+
+    6) Pole wyboru z opcjami (input type="radio)
+        -required: wymagane dokonanie wyboru
+        -name: przypisanie polom radio tej samej nazwy, aby tylko jedno z nich mogło zostać zaznaczone
+    
+    7) Pole wyboru pliku (input type="file")
+        -accept: określenie typu akceptowanych plików
+        -required: wymagane wybranie pliku
+-------------------------------------------------------------
+2.
+    Wyrażenie regularne to ciąg znaków, który opisuje w pewnie sposób wzorzec tekstowy. Służy do wyszukiwania, porównywania, podmieniania i walidacji tekstu w sposób bardziej zaawansowany niż zwykłe operacje na łańcuchach znaków
+    Przykłady:
+    1) Wyszukiwanie adresów e-mail w tekście za pomocą wzorca               `/[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}/`
+    2) Sprawdzanie poprawności kodu pocztowego. W Polsce wzorzec to XX-XXX  `/^[0-9]{2}-[0-9]{3}$/`
+    3) Usuwanie znaków białych na początku i końcu tekstu                   `/^s+|\+$/g`
+    4) Zmiana wszystkich liter małych na wielkie w tekście                  `/[a-z]/g, match => match.toUpperCase()`
+    5) Wyszukiwanie wszystkich linków w tekście                             `/https?:\/\/[\S]+/g`
+-------------------------------------------------------------
+3.
+    Atrybut "pattern" w elemencie <input> służy do określania wzorca, jakie dane mogą być wprowadzane do tego pola. Wzorzec jest wyrażeniem regularnym, które porównywane z wartością wprowadzaną przez użytkownika, Jeśli wartość nie pasuje do wzorca, pole może zostać oznaczone jako nieprawidłowe. 
