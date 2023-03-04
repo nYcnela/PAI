@@ -1,9 +1,9 @@
 /*ustawienia dla całej tabeli*/
 table{
+    margin:2%;
+    width:94%;
     background:#ffffb3;
     text-align:center;
-    width:94%;
-    margin:2%;
     border:1pt solid #000040;
 }
 /*ustawienie tytułu tabeli*/
@@ -13,10 +13,10 @@ caption {
 }
 /*formatownanie części nagłówkowej i stopki tabeli*/
 tfoot, thead {
+    padding: 5pt;
     background:#0000a0;
     color:#ffffff;
     font-size:110%;
-    padding: 5pt;
 }
 /*formatowanie pojedyńczych komórek zwykłych i nagłówkowych*/
 td, th {

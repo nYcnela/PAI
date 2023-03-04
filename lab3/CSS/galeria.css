@@ -6,7 +6,7 @@ body {
 
 #kontener{
     position: absolute;
-    width: 90%;
+    width: 75%;
     left: 50%;
     transform: translate(-50%,0%);
     background-color: #ffffff;
@@ -23,15 +23,16 @@ h1,h2, #stopka{
     margin: 0;
     width: 100%;
     background-color: #fff;
-    border-bottom: 2px solid #0000a0;
 }
+
 #menu li{
     float: left;
-    margin: 0;
     padding: 0;
+    margin: 0;
     list-style: none;
     font-size: 85%;
 }
+/*formatowanie nawigacji*/
 #nav{
     text-align: left;
     overflow: hidden;
@@ -60,8 +61,8 @@ ul#nav li li a{
     width: 160px;
 }
 ul#nav li ul{
-    overflow: hidden;
     display: none;
+    overflow: hidden;
 }
 ul#nav li:hover ul{
     position: absolute;
@@ -78,13 +79,26 @@ ul#nav li:hover ul{
 }
 #tresc h3{
     margin: 0;
+    text-align: center;
+    font-weight: normal;
+}
+#tresc ul{
+    padding: 0px 50px;
+}
+#tresc ul li{
+    display: inline-block;
+    padding: 0px 5px;
+    text-align: center;
+    
+}
+#tresc ul li a img{
+    padding: 5px;
 }
 #pasek{
     float: right;
     padding: 1%;
     width: 20%;
 }
-
 *.box{
     margin: 5px;
     padding: 5px;
@@ -102,3 +116,5 @@ ul#nav li:hover ul{
     clear: both;
     text-align: center;
 }
+
+
