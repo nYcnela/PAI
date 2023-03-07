@@ -105,7 +105,20 @@ footer{
         display: flex;
         width: 100%;
     }
-    img{
+    .slajd img{
         width: 50%;
+    }
+}
+@media only screen and (min-width : 768px) 
+and (max-width : 1024px) 
+and (orientation : landscape) { 
+    h1,h2{
+        font-size: 40px;
+    }
+    /* p, footer{
+        font-size: 25px;
+    } */
+    .slajd{
+        width: 60%;
     }
 }
