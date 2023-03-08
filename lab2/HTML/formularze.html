@@ -29,9 +29,9 @@
             <h3>Przykładowy formularz HTML:</h3>
             <form action="mailto:test@test.com" method="post">
                 <label for="nazwisko">Nazwisko:</label>
-                <input type="text" name="login"> <br>
+                <input type="text" name="nazwisko"> <br>
                 <label for="wiek">Wiek:</label> 
-                <input type="text" name="password"> <br>
+                <input type="text" name="wiek"> <br>
                 <label for="panstwo">Państwo:</label>
                 <select name="panstwo" id="panstwo">
                     <option value="polska">Polska</option>
@@ -50,11 +50,11 @@
                 <input type="checkbox" name="java" id="java">
                 <label for="java">Java</label>
                 <h4>Sposób zapłaty</h4>
-                <input type="radio" name="eurocard" id="eurocard">
+                <input type="radio" name="platnosc" id="eurocard" required>
                 <label for="eurocard">eurocard</label>
-                <input type="radio" name="visa" id="visa">
+                <input type="radio" name="platnosc" id="visa">
                 <label for="visa">visa</label>
-                <input type="radio" name="przelew" id="przelwe">
+                <input type="radio" name="platnosc" id="przelwe">
                 <label for="przelewBankowy">przelew bankowy</label>
                 <br>
                 <input style="margin-right: 5px;"type="submit" value="Wyślij">
