@@ -1,0 +1,50 @@
+h2, nav, footer{
+    text-align: center;
+}
+h2,footer{
+    color: black;
+    background-color: #E7AB9A;
+}
+.kontener{
+    min-width: auto;
+    max-width: 1200px;
+}
+a{
+    text-decoration: none;
+}
+/*ustawienia dla całej tabeli*/
+table{
+    margin:2%;
+    width:94%;
+    /* background:#ffffb3; */
+    border-radius: 5px;
+    text-align:center;
+    border:1pt solid #000040;
+}
+/*ustawienie tytułu tabeli*/
+caption {
+    font-size:120%;
+    font-weight: bold;
+}
+/*formatownanie części nagłówkowej i stopki tabeli*/
+tfoot, thead {
+    padding: 5pt;
+    background:#E7AB9A;
+    font-size:110%;
+}
+/*formatowanie pojedyńczych komórek zwykłych i nagłówkowych*/
+td, th {
+    border:1pt solid #000040;
+}
+/*formatowanie elementu <a> zawartego w elementcie <tfoot>*/
+tfoot a {
+    color:black;
+}
+/*defonicja klasy o nazwie parzysty - można ją zastosować dla dowolnego znacznika w dokumencie html podając atrybut class = "parzysty" */
+tbody :nth-child(odd) td{
+    background-color: #EDE9D5;
+}
+/*dodawanie przestrzeni pomiedzy hiperłączmi dla el. <a> zawartefo w elemencie o id "menu"*/
+nav  a{
+    padding-right: 10px;
+}

@@ -1,0 +1,104 @@
+
+body {
+    background-color: #4ae;
+    color: #000040;
+}
+
+#kontener{
+    position: absolute;
+    width: 90%;
+    left: 50%;
+    transform: translate(-50%,0%);
+    background-color: #ffffff;
+}
+h1,h2, #stopka{
+    margin: 0;
+    background: #000040;
+    color: #8080ff;
+    text-align: center
+}
+#menu{
+    float: left;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    background-color: #fff;
+    border-bottom: 2px solid #0000a0;
+}
+#menu li{
+    float: left;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 85%;
+}
+#nav{
+    text-align: left;
+    overflow: hidden;
+    font-family: calibri, tahoma;
+}
+ul#nav li{
+    float: left;
+    margin-left: 3px;
+    background: #98bed8;
+    border: 1px solid #d5d5d5;
+    list-style-type: none;
+}
+ul#nav li:hover{
+    float: left;
+    margin-left: 3px;
+    background: #f0f0f0;
+    border: 1px solid #d5d5d5;
+    list-style-type: none;
+}
+ul#nav li a{
+    display: block;
+    padding: 4pt;
+    text-decoration: none;
+}
+ul#nav li li a{
+    width: 160px;
+}
+ul#nav li ul{
+    overflow: hidden;
+    display: none;
+}
+ul#nav li:hover ul{
+    position: absolute;
+    display: block;
+    padding: 0;
+    width: 177px;
+    background: #aaa;
+}
+#tresc{
+    float: left;
+    padding: 1%;
+    width:75%;
+    background-color: #b6d0e4;
+}
+#tresc h3{
+    margin: 0;
+}
+#pasek{
+    float: right;
+    padding: 1%;
+    width: 20%;
+}
+
+*.box{
+    margin: 5px;
+    padding: 5px;
+    background: #0000a0;
+    color: #dbffff;
+    font-size: 90%;
+}
+/*hiperłącza w elementach klasy box*/
+*.box a{
+    color: #ffffb0;
+}
+#stopka{
+    padding: 5px 0px 5px 0px;
+    width: 100%;
+    clear: both;
+    text-align: center;
+}

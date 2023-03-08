@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tworzenie tabel</title>
+    <link rel="stylesheet" href="../CSS - kopiaLab1-3/tabele.css" type="text/css">
+</head>
+<body>
+    <div class="kontener">
+        <header>
+            <h2>Szybki kurs HTML</h2>
+        </header>
+        <nav>
+            <a href="./index.html">Postawowe znaczniki</a>
+            <a href="./tabele.html">Tworzenie tabel</a>
+            <a href="./formularze.html">Budowa Formularzy</a>
+            <a href="./galeria.html">Galeria</a>
+        </nav>
+        <main>
+            <h3>Podstawowe znaczniki do tworzenia tabel to:</h3>
+            <ul>
+                <li>&lt;table&gt; - znacznik zawierający całą tabele</li>
+                <li>&lt;caption&gt; - tytuł tabeli</li>
+                <li>&lt;thead&gt; - nagłówek tabeli</li>
+                <li>&lt;tbpdy&gt; - zawartość tabeli</li>
+                <li>&lt;tfoot&gt; - stopka tabeli</li>
+                <li>&lt;tr&gt; - wiersz tabeli</li>
+                <li>&lt;td&gt; - komórka tabeli (zawarta w wierszu)</li>
+                <li>&lt;th&gt; - komórka nagłówkowa tabeli (również zawarta w wierszu)</li>
+            </ul>
+            <h3>Przykładowa tabela HTML:</h3>
+            <div>
+                <table>
+                    <caption>Popularność języków programowania</caption>
+                    <thead>
+                        <tr>
+                            <th rowspan="2">Język programowania</th>
+                            <th colspan="2">Pozycja</th>
+                        </tr>
+                        <tr>
+                            <th>Luty 2015</th>
+                            <th>2015</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Java</td>
+                            <td>1</td>
+                            <td>2</td>
+                        </tr>
+                        <tr class="parzysty">
+                            <td>C</td>
+                            <td>2</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>Python</td>
+                            <td>3</td>
+                            <td>7</td>
+                        </tr>
+                        <tr class="parzysty">
+                            <td>C++</td>
+                            <td>4</td>
+                            <td>4</td>
+                        </tr>
+                        <tr>
+                            <td>C#</td>
+                            <td>5</td>
+                            <td>7</td>
+                        </tr>
+                        <tfoot>
+                            <td colspan="3">Na podstawie: <br>
+                                <a href="https://www.tiobe.com/index.php/content/paperinfo/tpci/index.html">https://www.tiobe.com/index.php/content/paperinfo/tpci/index.html</a>
+                            </td>
+                        </tfoot>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+        
+        <br>
+        <footer>&copy;MA</footer>
+    </div>
+</body>
+</html>

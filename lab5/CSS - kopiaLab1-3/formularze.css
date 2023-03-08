@@ -1,0 +1,39 @@
+body{
+    background-color: #F6E1C3;
+}
+
+header, footer{
+    background-color: #E9A178;
+    text-align: center;
+}
+nav{
+    background-color: #ffffff;
+    text-align: center;
+}
+nav  a{
+    padding-right: 10px;
+    text-decoration: none;
+}
+main{
+    background-color: #ebb799;
+}
+form :nth-child(2){
+    margin-left: 19px;
+}
+form :nth-child(5){
+    margin-left: 49px;
+}
+form input{
+    border: 1px solid black;
+    border-radius: 4px;
+}
+form select{
+    margin-left: 29px;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+footer{
+    padding: 5px 0px 5px 0px;
+    width: 100%;
+    clear: both;
+}
