@@ -95,9 +95,18 @@ aside{
 *.box a{
     color: #ffffb0;
 }
+
 footer{
     padding: 5px 0px 5px 0px;
     clear: both;
+}
+.komunikat{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    color: red;
+    font-weight: bold;
+    visibility: hidden;
 }
 /*modyfikowanie storny tak aby układ 2 - kolumnowy przechodzil w jedna kolumne*/
 @media only screen and (max-width : 770px){
