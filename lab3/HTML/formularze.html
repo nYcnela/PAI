@@ -29,9 +29,9 @@
             <h3>Przykładowy formularz HTML:</h3>
             <form action="mailto:test@test.com" method="post">
                 <label for="nazwisko">Nazwisko:</label>
-                <input type="text" name="nazwisko"> <br>
+                <input type="text" name="nazwisko" id="nazwisko"> <br>
                 <label for="wiek">Wiek:</label> 
-                <input type="text" name="wiek"> <br>
+                <input type="text" name="wiek" id="wiek"> <br>
                 <label for="panstwo">Państwo:</label>
                 <select name="panstwo" id="panstwo">
                     <option value="polska">Polska</option>
@@ -40,13 +40,13 @@
                     <option value="niemcy">Niemcy</option>
                 </select><br>
                 <label for="email">Adres e-mail:</label>
-                <input type="text" name="email"> <br>
+                <input type="text" name="email" id="email"> <br>
                 
                 <h4>Zamawiam tutorial z języka:</h4>
                 <input type="checkbox" name="php" id="php">
                 <label for="php">Php</label>
                 <input type="checkbox" name="c" id="c">
-                <label for="cpp">C/C++</label>
+                <label for="c">C/C++</label>
                 <input type="checkbox" name="java" id="java">
                 <label for="java">Java</label>
                 <h4>Sposób zapłaty</h4>
@@ -54,10 +54,10 @@
                 <label for="eurocard">eurocard</label>
                 <input type="radio" name="platnosc" id="visa">
                 <label for="visa">visa</label>
-                <input type="radio" name="platnosc" id="przelwe">
+                <input type="radio" name="platnosc" id="przelewBankowy">
                 <label for="przelewBankowy">przelew bankowy</label>
                 <br>
-                <input style="margin-right: 5px;"type="submit" value="Wyślij">
+                <input style="margin-right: 5px;" type="submit" value="Wyślij">
                 <input type="reset" value="Anuluj">
             </form>
         </div>
