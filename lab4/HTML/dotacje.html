@@ -10,7 +10,7 @@
 <body>
     <div class="kontener">
         <h2>Formularz dotacji</h2>
-        <form action="">
+        <form action="test@test.com">
             <fieldset>
                 <label for="beneficjent">Beneficjent:</label>
                 <input type="text" name="beneficjent" id="beneficjent" list="organizacje" required><br>
@@ -25,14 +25,14 @@
             </fieldset>
             <fieldset>
                 <legend>Dane karty płatniczej</legend>
-                <label for="platnosc">Karta:</label>
+                <label>Karta:</label>
                 <input type="radio" name="platnosc" id="visa" value="Visa"> Visa
                 <input type="radio" name="platnosc" id="masterCard" value="Master Card">Master Card<br>
-                <label for="karta">Numer:</label> 
+                <label for="numer">Numer:</label> 
                 <input type="text" name="numer" id="numer" pattern="^(\d{13}|\d{16})$"><br>
-                <label for="karta">Data ważności:</label>
+                <label for="dataWaznosci">Data ważności:</label>
                 <input type="date" name="karta" id="dataWaznosci"> <br>
-                <label for="karta">Kod CVV: </label>
+                <label for="kodCvv">Kod CVV: </label>
                 <input type="text" name="karta" id="kodCvv" pattern="^(\d{3}|\d{4})$">
             </fieldset>
             <label for="darczynca">Darczyńca:</label>
