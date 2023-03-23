@@ -83,7 +83,7 @@ ul#nav li:hover ul{
     font-weight: normal;
 }
 #tresc ul{
-    padding: 0px 50px;
+    padding: 0 9%;
 }
 #tresc ul li{
     display: inline-block;

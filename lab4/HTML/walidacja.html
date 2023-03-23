@@ -10,25 +10,25 @@
     <div>
         <form action="#" method="get"> 
         <p>
-        Imię*:<br>
+        *Imię:<br>
         <input type="text" name="imie" pattern="^[a-zA-z]{3,13}(, [a-zA-Z]{3,13})?$" required><br>
-        Nazwisko*:<br>
+        *Nazwisko:<br>
         <input type="text" name="nazwisko" pattern="^[a-zA-Z]{3,13}(-[a-zA-Z]{3,13})?$" required><br>
-        Email*:<br>
+        *Email:<br>
         <input type="email" name="email" placeholder="np: nazwa@gmail.com" required><br>
-        Telefon*:<br>
+        *Telefon:<br>
         <input type="text" name="telefon" pattern="^[0-9]{3}(| )[0-9]{3}(| )[0-9]{3}$" placeholder="np:123 234 345" required><br>
         Data urodzenia:<br>
-        <input type="date" name="data"><br>
-        Hasło*:<br>
+        <input type="date" name="data" required><br>
+        *Hasło:<br>
         <input type="password" name="haslo" required><br>
         </p>
         <p>
-        Uczeń: <input type="radio" name="kto" value="uczen"> 
+        Uczeń: <input type="radio" name="kto" value="uczen" required> 
         Student: <input type="radio" name="kto" value="student"> 
         Pracownik: <input type="radio" name="kto" value="pracownik"><br>
         <br>
-        Zainteresowania: 
+        *Zainteresowania: 
         <select name="zainteresowania" multiple size="3" required>
             <option value="sport">Sport</option>
             <option value="film">Film</option>

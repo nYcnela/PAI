@@ -12,31 +12,31 @@
         <h2>Formularz dotacji</h2>
         <form action="test@test.com">
             <fieldset>
-                <label for="beneficjent">Beneficjent:</label>
-                <input type="text" name="beneficjent" id="beneficjent" list="organizacje" required><br>
+                <label for="beneficjent">*Beneficjent:</label>
+                <input type="text" name="beneficjent" id="beneficjent" list="organizacje" title="Wprowadż organizacje bądź wybierz z listy" required><br>
                 <datalist id="organizacje">
                     <option value="Wioski dziecięce SOS"></option>
                     <option value="Stowarzyszenie Pomoc Bezdomnym"></option>
                     <option value="Polski Czerwony Krzyż"></option>
                     <option value="Caritas Polska"></option>
                 </datalist>
-                <label for="wartoscDotacji">Wartość dotacji:</label>
-                <input type="number" name="wartoscDotacji" id="wartoscDotacji" min="20" step="10" required>
+                <label for="wartoscDotacji">*Wartość dotacji:</label>
+                <input type="number" name="wartoscDotacji" id="wartoscDotacji" min="20" step="10" title="wpisz kwote nie mniejsza niz 20zl" required>
             </fieldset>
             <fieldset>
                 <legend>Dane karty płatniczej</legend>
-                <label>Karta:</label>
-                <input type="radio" name="platnosc" id="visa" value="Visa"> Visa
+                <label>*Karta:</label>
+                <input type="radio" name="platnosc" id="visa" value="Visa" required> Visa
                 <input type="radio" name="platnosc" id="masterCard" value="Master Card">Master Card<br>
-                <label for="numer">Numer:</label> 
-                <input type="text" name="numer" id="numer" pattern="^(\d{13}|\d{16})$"><br>
-                <label for="dataWaznosci">Data ważności:</label>
-                <input type="date" name="karta" id="dataWaznosci"> <br>
-                <label for="kodCvv">Kod CVV: </label>
-                <input type="text" name="karta" id="kodCvv" pattern="^(\d{3}|\d{4})$">
+                <label for="numer">*Numer:</label> 
+                <input type="text" name="numer" id="numer" pattern="^(\d{13}|\d{16})$" title="podaj nr. z przodu karty" required><br>
+                <label for="dataWaznosci">*Data ważności:</label>
+                <input type="date" name="karta" id="dataWaznosci" required> <br>
+                <label for="kodCvv">*Kod CVV: </label>
+                <input type="text" name="karta" id="kodCvv" pattern="^(\d{3}|\d{4})$" title="podaj nr. z tylu karty" required>
             </fieldset>
-            <label for="darczynca">Darczyńca:</label>
-            <input type="text" name="darczynca" id="darczynca" pattern="^[a-zA-Z]{3,}$"><br>
+            <label for="darczynca" title="twoje imie">*Darczyńca:</label>
+            <input type="text" name="darczynca" id="darczynca" pattern="^[a-zA-Z]{3,}$" title="wpisz swoje imie" required><br>
             <input type="submit" name="zatwierdz" id="zatwierdz" value="Rejestruj">
             <input type="reset" name="anuluj" id="anuluj" value="Anuluj">
         </form>
