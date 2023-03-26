@@ -22,8 +22,8 @@
                     <li><a href="./obliczenia.html">Formularz obliczeniowy</a></li>
                     <li><a href="./kalkulator.html">Kalkulator</a></li>
                 </ul>
-                <li><a href="./galeria.html" title="">Galeria</a></li>
                 </li>
+                <li><a href="./galeria.html" title="">Galeria</a></li>
             </ul>
         </nav>
         <main>
@@ -38,24 +38,25 @@
             <h3>Przykładowy formularz HTML:</h3>
             <form action="mailto:test@test.com" method="post">
                 <label for="nazwisko">Nazwisko:</label>
-                <input type="text" name="nazwisko" required> <br>
+                <input type="text" name="nazwisko" id="nazwisko" required> <br>
                 <label for="wiek">Wiek:</label> 
-                <input type="number" name="wiek" required> <br>
+                <input type="number" name="wiek" id="wiek" required> <br>
                 <label for="panstwo">Państwo:</label>
                 <select name="panstwo" id="panstwo" required>
+                    <option value="">-Wybierz-</option>
                     <option value="polska">Polska</option>
                     <option value="anglia">Anglia</option>
                     <option value="francja">Francja</option>
                     <option value="niemcy">Niemcy</option>
                 </select><br>
                 <label for="email">Adres e-mail:</label>
-                <input type="email" name="email" placeholder="name@gmail.com" pattern="^([a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,63})$" required> <br>
+                <input type="email" name="email" id="email" placeholder="name@gmail.com" pattern="^([a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,63})$" required> <br>
                 
                 <h4>Zamawiam tutorial z języka:</h4>
                 <input type="checkbox" name="php" id="php">
                 <label for="php">Php</label>
                 <input type="checkbox" name="c" id="c">
-                <label for="cpp">C/C++</label>
+                <label for="c">C/C++</label>
                 <input type="checkbox" name="java" id="java">
                 <label for="java">Java</label>
                 <h4>Sposób zapłaty</h4>
@@ -63,10 +64,10 @@
                 <label for="eurocard">eurocard</label>
                 <input type="radio" name="platnosc" id="visa">
                 <label for="visa">visa</label>
-                <input type="radio" name="platnosc" id="przelwe">
+                <input type="radio" name="platnosc" id="przelewBankowy">
                 <label for="przelewBankowy">przelew bankowy</label>
                 <br>
-                <input style="margin-right: 5px;"type="submit" value="Wyślij">
+                <input style="margin-right: 5px; " type="submit" value="Wyślij">
                 <input type="reset" value="Anuluj">
             </form>
         </main>
