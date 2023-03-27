@@ -9,6 +9,10 @@ h1,h2,footer {
 .srodek {
     text-align:center;
 }
+.centrowanie{
+    display: flex;
+    justify-content: center;
+}
 nav{
     float:left;
     width:100%;
