@@ -1,0 +1,8 @@
+.kontener{
+  display: block;
+  position: absolute;
+  width: 30%;
+  left: 50%;
+  transform: translate(-50%,0%);
+  background-color: #ffffff;
+}

@@ -1,0 +1,118 @@
+
+body {
+    background-color: #4ae;
+    color: #000040;
+}
+
+.kontener{
+    position: absolute;
+    width: 90%;
+    left: 50%;
+    transform: translate(-50%,0%);
+    background-color: #ffffff;
+}
+
+h1,h2, footer{
+    margin: 0;
+    background: #000040;
+    color: #8080ff;
+    text-align: center
+}
+nav{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    background-color: #fff;
+    border-bottom: 2px solid #0000a0;
+}
+nav li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 85%;
+}
+nav ul{
+    display: flex;
+    text-align: left;
+    overflow: hidden;
+    font-family: calibri, tahoma;
+}
+nav ul li{
+    margin-left: 3px;
+    background: #98bed8;
+    border: 1px solid #d5d5d5;
+    list-style-type: none;
+}
+nav ul li:hover{
+    margin-left: 3px;
+    background: #f0f0f0;
+    border: 1px solid #d5d5d5;
+    list-style-type: none;
+}
+nav ul li a{
+    display: block;
+    padding: 4pt;
+    text-decoration: none;
+}
+nav ul li li a{
+    width: 160px;
+}
+nav ul li ul{
+    overflow: hidden;
+    display: none;
+}
+nav ul li:hover ul{
+    position: absolute;
+    display: block;
+    padding: 0;
+    width: 177px;
+    background: #aaa;
+}
+.zawartosc{
+    display: flex;
+}
+main{
+    padding: 1%;
+    width:75%;
+    background-color: #b6d0e4;
+}
+main h3{
+    margin: 0;
+}
+aside{
+    padding: 1%;
+    width: 20%;
+}
+
+*.box{
+    margin: 5px;
+    padding: 5px;
+    background: #0000a0;
+    color: #dbffff;
+    font-size: 90%;
+}
+/*hiperłącza w elementach klasy box*/
+*.box a{
+    color: #ffffb0;
+}
+footer{
+    padding: 5px 0px 5px 0px;
+    clear: both;
+}
+/*modyfikowanie storny tak aby układ 2 - kolumnowy przechodzil w jedna kolumne*/
+@media only screen and (max-width : 770px){
+    main{
+        width: 98%;
+    }
+    .zawartosc{
+        display: block;
+    }
+    aside{
+        width: 98%;
+        display: flex;
+        justify-content: center;
+    }
+    .box{
+        min-width: 40%;
+    }
+} 
