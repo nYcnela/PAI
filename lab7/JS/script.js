@@ -49,10 +49,11 @@ function pokazPost(){
   'Imię i Nazwisko:<br><input type="text" id="nazwisko" name="nazwisko" size="30" required><br>' +
   'Telefon:<br><input type="tel" id="telefon" name="telefon" size="30" pattern="^[0-9]+$" required><br>' +
   '<br><div id="zainteresowania">Zainteresowania:<br>' +
-  '<input type="checkbox" name="zainteresowania[]" value="Sport">Sport ' +
-  '<input type="checkbox" name="zainteresowania[]" value="Muzyka">Muzyka ' +
-  '<input type="checkbox" name="zainteresowania[]" value="Film">Film ' +
-  '<input type="checkbox" name="zainteresowania[]" value="Inne">Inne</div>' +
+  '<input type="checkbox" name="zainteresowania" value="Sport">Sport ' +
+  '<input type="checkbox" name="zainteresowania" value="Muzyka">Muzyka ' +
+  '<input type="checkbox" name="zainteresowania" value="Filmy">Filmy ' +
+  '<input type="checkbox" name="zainteresowania" value="Ksizaki">Ksiazki ' +
+  '<input type="checkbox" name="zainteresowania" value="Inne">Inne</div>' +
   '<div id="wiek"><br>Wiek:<br>' +
   '<input type="radio" name="wiek" value="Mniej niż 10">Mniej niż 10 ' +
   '<input type="radio" name="wiek" value="10-20">10-20 ' +
@@ -68,17 +69,21 @@ function pokazPost(){
 function pokazDane() {
   let dane = "Następujące dane zostaną wysłane:\n";
   dane += "Email: " + document.getElementById("email").value + "\n";
-  dane+="Imię i Nazwisko: "+document.getElementById('nazwisko').value+"\n";
-  dane+="Telefon: "+document.getElementById('telefon').value+"\n";
-  let checkboxes = document.getElementsByName('zain');
-  let checkboxesZaz = []
-  for(let index = 0; index < checkboxes.length; index++){
-    if(checkboxes[index].checked){
-      checkboxesZaz.push(checkboxes[index].value)
+  dane +="Imię i Nazwisko: "+document.getElementById('nazwisko').value+"\n";
+  dane +="Telefon: "+ document.getElementById('telefon').value+"\n";
+  let zainteresowania = document.getElementsByName('zainteresowania');
+  let zazZainteresowania = []
+  for(let i = 0; i < zainteresowania.length; i++){
+    if(zainteresowania[i].checked){
+      zazZainteresowania.push(zainteresowania[i].value)
     }
   }
-  dane += 'Zainteresowania: ' + checkboxesZaz + "\n"
-  let temp = dociment.getElementsByName('wie')
+  dane += 'Zainteresowania: ' + zazZainteresowania.join(", ") + "\n"
+  let lata = document.getElementsByName('wiek')
+  for(let i = 0; i < lata.length; i++){
+    if(lata[i].checked) dane += "Wiek: " + lata[i].value + "\n"
+  }
+  dane += "Wiadomość: " + document.getElementById('wiadomosc').value
   if (window.confirm(dane)) return true;
   else return false;
 }
