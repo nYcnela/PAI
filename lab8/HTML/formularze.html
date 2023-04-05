@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="pl">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formularze</title>
-    <link rel="stylesheet" href="../CSS/formularze.css" type="text/css" />
+    <link rel="stylesheet" href="../CSS/formularze.css" type="text/css">
   </head>
   <body>
     <div class="kontener">
@@ -51,12 +51,12 @@
           <table>
             <tr>
               <td>Nazwisko:</td>
-              <td><input name="nazw" size="30" id="nazw" /></td>
+              <td><input name="nazw" size="30" id="nazw"></td>
               <td id="nazw_error" class="czerwone"></td>
             </tr>
             <tr>
               <td>Wiek:</td>
-              <td><input name="wiek" size="30" id="wiek" /></td>
+              <td><input name="wiek" size="30" id="wiek"></td>
               <td id="wiek_error" class="czerwone"></td>
             </tr>
             <tr>
@@ -69,6 +69,7 @@
                   <option value="de">Niemcy</option>
                 </select>
               </td>
+              <td></td>
             </tr>
             <tr>
               <td>Adres e-mail:</td>
@@ -78,7 +79,7 @@
                   size="30"
                   id="email"
                   placeholder="name@gmail.com"
-                />
+                >
               </td>
               <td id="email_error" class="czerwone"></td>
             </tr>
@@ -86,23 +87,23 @@
 
           <h4>Zamawiam tutorial z języka:</h4>
           <p>
-            <input type="checkbox" name="jezyk" id="php" />PHP
-            <input type="checkbox" name="jezyk" id="c" />C/C++
-            <input type="checkbox" name="jezyk" id="java" />Java
+            <input type="checkbox" name="jezyk" id="php">PHP
+            <input type="checkbox" name="jezyk" id="c">C/C++
+            <input type="checkbox" name="jezyk" id="java">Java
             <span id="produkt_error" class="czerwone"></span>
           </p>
           <h4>Sposób zapłaty:</h4>
           <p>
-            <input type="radio" name="platnosc" id="eurocard"/>eurocard
-            <input type="radio" name="platnosc" id="visa" />visa
-            <input type="radio" name="platnosc" id="przelewBankowy" />przelew
-            bankowy <span id="zaplata_error" class="czerwone"></span><br />
-            <input type="submit" value="Wyślij" />
-            <input type="reset" value="Anuluj" />
+            <input type="radio" name="platnosc" id="eurocard">eurocard
+            <input type="radio" name="platnosc" id="visa">visa
+            <input type="radio" name="platnosc" id="przelewBankowy">przelew
+            bankowy <span id="zaplata_error" class="czerwone"></span><br>
+            <input type="submit" value="Wyślij">
+            <input type="reset" value="Anuluj">
           </p>
         </form>
       </main>
-      <br />
+      <br>
       <footer>&copy;MA</footer>
     </div>
     <script src="../JS/walidacja.js"></script>
