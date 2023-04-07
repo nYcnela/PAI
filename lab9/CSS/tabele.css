@@ -1,0 +1,101 @@
+h2, nav, footer{
+    text-align: center;
+}
+h2,footer{
+    color: black;
+    background-color: #E7AB9A;
+}
+nav{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    background-color: #fff;
+    border-bottom: 2px solid #E7AB9A;
+}
+nav li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 85%;
+}
+nav ul{
+    display: flex;
+    text-align: left;
+    overflow: hidden;
+    font-family: calibri, tahoma;
+}
+nav ul li{
+    margin-left: 3px;
+    background: #f8ded7;
+    border: 1px solid #d5d5d5;
+    list-style-type: none;
+}
+nav ul li:hover{
+    margin-left: 3px;
+    background: #f0f0f0;
+    border: 1px solid #d5d5d5;
+    list-style-type: none;
+}
+nav ul li a{
+    display: block;
+    padding: 4pt;
+    text-decoration: none;
+}
+nav ul li li a{
+    width: 160px;
+}
+nav ul li ul{
+    overflow: hidden;
+    display: none;
+}
+nav ul li:hover ul{
+    position: absolute;
+    display: block;
+    padding: 0;
+    width: 177px;
+    background: #aaa;
+}
+.kontener{
+    min-width: auto;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+}
+/*ustawienia dla całej tabeli*/
+table{
+    margin:2%;
+    width:94%;
+    /* background:#ffffb3; */
+    border-radius: 5px;
+    text-align:center;
+    border:1pt solid #000040;
+}
+/*ustawienie tytułu tabeli*/
+caption {
+    font-size:120%;
+    font-weight: bold;
+}
+/*formatownanie części nagłówkowej i stopki tabeli*/
+tfoot, thead {
+    padding: 5pt;
+    background:#E7AB9A;
+    font-size:110%;
+}
+/*formatowanie pojedyńczych komórek zwykłych i nagłówkowych*/
+td, th {
+    border:1pt solid #000040;
+}
+/*formatowanie elementu <a> zawartego w elementcie <tfoot>*/
+tfoot a {
+    color:black;
+}
+/*defonicja klasy o nazwie parzysty - można ją zastosować dla dowolnego znacznika w dokumencie html podając atrybut class = "parzysty" */
+tbody :nth-child(odd) td{
+    background-color: #EDE9D5;
+}
+/*dodawanie przestrzeni pomiedzy hiperłączmi dla el. <a> zawartefo w elemencie o id "menu"*/
+nav  a{
+    padding-right: 10px;
+}

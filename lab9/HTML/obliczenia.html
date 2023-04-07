@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularz obliczeniowy</title>
+    <link rel="stylesheet" href="../CSS/obliczenia.css" type="text/css">
+</head>
+<body>
+    <div class="kontener">
+        <header>
+            <h2>Szybki kurs HTML</h2>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Postawowy</a></li>
+                <li><a href="./tabele.html">Tabele</a></li>
+                <li><a href="">Formularze</a>
+                <ul>
+                    <li><a href="./formularze.html">Pola formularza</a></li>
+                    <li><a href="./obliczenia.html">Formularz obliczeniowy</a></li>
+                    <li><a href="./kalkulator.html">Kalkulator</a></li>
+                </ul>
+                </li>
+                <li><a href="./galeria.html" title="">Galeria</a></li>
+            </ul>
+        </nav>
+        <div class="zawartosc">
+            <main>
+                <h3>Pożyczka</h3>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>Kwota:</td>
+                            <td><input type="text" id="l1"></td>
+                        </tr>
+                        <tr>
+                            <td>Ile rat:</td>
+                            <td><input type="text" id="l2"></td>
+                        </tr>
+                        <tr>
+                            <td>Procent:</td>
+                            <td><input type="text" id="l3"></td>
+                        </tr>
+                        <tr>
+                            <td>Rata miesięczna:</td>
+                            <td><input type="text" id="l4" disabled></td>
+                        </tr>
+                        <tr>
+                            <td>Kwota z odsetkami:</td>
+                            <td><input type="text" id="l5" disabled></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button id="rata">Oblicz ratę stałą</button>
+                            </td>
+                            <td>
+                                <p class="komunikat" id="infoBtn">Błędne dane, spróbuj ponownie</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+            </main>
+            <aside>
+                <div class="box">
+                    <h3>Walidatory:</h3>
+                    <ul>
+                        <li><a href="https://validator.w3.org/">HTML</a></li>
+                        <li><a href="https://jigsaw.w3.org/css-validator/">CSS</a></li>
+                    </ul>
+                </div>
+                <div class="box">
+                    <h3>Kursy:</h3>
+                    <ul>
+                        <li><a href="https://www.w3schools.com/html/"> HTML </a></li>
+                        <li><a href="https://www.w3schools.com/css/"> CSS </a></li>
+                        <li><a href="https://www.w3schools.com/js/"> JS </a></li>
+                        <li><a href="https://www.w3schools.com/php/"> PHP </a></li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+        <br>
+        <footer>&copy;MA</footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="../JS/srcipt.js"></script>
+    <!-- <script src="../JS/obliczenia.js"></script> -->
+</body>
+</html>

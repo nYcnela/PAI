@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator</title>
+    <link rel="stylesheet" href="../CSS/kalkulator.css" type="text/css">
+</head>
+<body>
+    <div class="kontener">
+        <fieldset>
+            <legend>Kalkulatorek:</legend>
+            <table>
+                <tr>
+                  <td>
+                        <h3>Wpisz liczby: </h3>
+                        <label for="pierwsza">X:</label> <br>
+                        <input type="number" id="pierwsza"><br>
+                        <label for="druga">Y:</label><br>
+                        <input type="number" id="druga">
+                  </td>
+                  <td>
+                        <h3>Wskaż działanie: </h3>
+                        <input type="radio" name="operacja" value="dodawanie" id="dodawanie">
+                        <label for="dodawanie">+</label><br>
+                        <input type="radio" name="operacja" value="odejmowanie" id="odejmowanie">
+                        <label for="odejmowanie">-</label><br>
+                        <input type="radio" name="operacja" value="mnożenie" id="mnozenie">
+                        <label for="mnozenie">*</label><br>
+                        <input type="radio" name="operacja" value="dzielenie" id="dzielenie">
+                        <label for="dzielenie">/</label>
+                  </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button id="oblicz" >Oblicz</button>
+                    </td>
+                    <td> 
+                        Wynik:
+                        <input type="text" id="wynik" disabled>
+                  </td>
+                </tr>
+              </table>
+        </fieldset>
+    </div>
+    <script src="../JS/kalkulator.js"></script>
+</body>
+</html>
