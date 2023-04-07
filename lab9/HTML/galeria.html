@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galeria</title>
     <link rel="stylesheet" href="../CSS/galeria.css" type="text/css">
+    <link rel="stylesheet" href="../CSS/lightbox.css" type="text/css">
 </head>
 <body>
     <div class="kontener">
@@ -31,15 +32,15 @@
             <main>
                 <h3>Galeria zdjęć</h3>
                 <ul>
-                    <li><a href="../Pictures/zdjecia/obraz1.JPG" target="_blank"><img src="../Pictures/miniaturki/obraz1.JPG" alt=""></a></li>
-                    <li><a href="../Pictures/zdjecia/obraz2.JPG" target="_blank"><img src="../Pictures/miniaturki/obraz2.JPG" alt=""></a></li>
-                    <li><a href="../Pictures/zdjecia/obraz3.JPG" target="_blank"><img src="../Pictures/miniaturki/obraz3.JPG" alt=""></a></li>
-                    <li><a href="../Pictures/zdjecia/obraz4.JPG" target="_blank"><img src="../Pictures/miniaturki/obraz4.JPG" alt=""></a></li>
-                    <li><a href="../Pictures/zdjecia/obraz5.JPG" target="_blank"><img src="../Pictures/miniaturki/obraz5.JPG" alt=""></a></li>
-                    <li><a href="../Pictures/zdjecia/obraz6.JPG" target="_blank"><img src="../Pictures/miniaturki/obraz6.JPG" alt=""></a></li>
-                    <li><a href="../Pictures/zdjecia/obraz7.JPG" target="_blank"><img src="../Pictures/miniaturki/obraz7.JPG" alt=""></a></li>
-                    <li><a href="../Pictures/zdjecia/obraz8.JPG" target="_blank"><img src="../Pictures/miniaturki/obraz8.JPG" alt=""></a></li>
-                    <li><a href="../Pictures/zdjecia/obraz9.JPG" target="_blank"><img src="../Pictures/miniaturki/obraz9.JPG" alt=""></a></li>               
+                    <li><a href="../Pictures/zdjecia/obraz1.JPG" data-lightbox="galeria" target="_blank"><img src="../Pictures/miniaturki/obraz1.JPG" alt="obraz1"></a></li>
+                    <li><a href="../Pictures/zdjecia/obraz2.JPG" data-lightbox="galeria" target="_blank"><img src="../Pictures/miniaturki/obraz2.JPG" alt="obraz2"></a></li>
+                    <li><a href="../Pictures/zdjecia/obraz3.JPG" data-lightbox="galeria" target="_blank"><img src="../Pictures/miniaturki/obraz3.JPG" alt="obraz3"></a></li>
+                    <li><a href="../Pictures/zdjecia/obraz4.JPG" data-lightbox="galeria" target="_blank"><img src="../Pictures/miniaturki/obraz4.JPG" alt="obraz4"></a></li>
+                    <li><a href="../Pictures/zdjecia/obraz5.JPG" data-lightbox="galeria" target="_blank"><img src="../Pictures/miniaturki/obraz5.JPG" alt="obraz5"></a></li>
+                    <li><a href="../Pictures/zdjecia/obraz6.JPG" data-lightbox="galeria" target="_blank"><img src="../Pictures/miniaturki/obraz6.JPG" alt="obraz6"></a></li>
+                    <li><a href="../Pictures/zdjecia/obraz7.JPG" data-lightbox="galeria" target="_blank"><img src="../Pictures/miniaturki/obraz7.JPG" alt="obraz7"></a></li>
+                    <li><a href="../Pictures/zdjecia/obraz8.JPG" data-lightbox="galeria" target="_blank"><img src="../Pictures/miniaturki/obraz8.JPG" alt="obraz8"></a></li>
+                    <li><a href="../Pictures/zdjecia/obraz9.JPG" data-lightbox="galeria" target="_blank"><img src="../Pictures/miniaturki/obraz9.JPG" alt="obraz9"></a></li>               
                 </ul>
             </main>
             <aside>
@@ -64,5 +65,7 @@
         <br>
         <footer>&copy;MA</footer>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="../JS/lightbox.js"></script>
 </body>
 </html>
