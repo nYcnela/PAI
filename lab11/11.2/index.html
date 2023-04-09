@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Web storage</title>
+  </head>
+  <body>
+    <form>
+      <h2>Test session storage</h2>
+      <label>
+        Kod szesnastkowy:
+        <input
+          type="text"
+          id="hex"
+          name="hex"
+          maxlength="6"
+          pattern="[0-9a-fA-F]{6}"
+        />
+      </label>
+      <label>
+        , Nazwa koloru:
+        <input type="text" id="colorName" name="colorName" />
+      </label>
+      <br />
+      <br />
+      <button type="button" id="saveBtn">Zapisz parę</button>
+      <button type="button" id="showBtn">Pokaż wszystkie pary</button>
+      <button type="button" id="clearBtn">Usuń dane</button>
+    </form>
+    <ul id="list" class="list"></ul>
+    <script src="./script.js"></script>
+  </body>
+</html>
