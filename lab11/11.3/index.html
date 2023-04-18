@@ -8,7 +8,9 @@
 </head>
 <body>
     <h1>Koszyk na produkty</h1>
-    <form action="mailto:test@test.com" method="post">
+    <form action="mailto:test@test.com" method="post" id="formularz_produktu">
+        <input type="hidden" id="indeks_edycji" name="indeks_edycji">
+        
         <label for="nazwa_produktu">Nazwa produktu:</label>
         <input type="text" id="nazwa_produktu" name="nazwa_produktu" required><br><br>
 
@@ -22,11 +24,19 @@
         <input type="number" id="liczba_sztuk" name="liczba_sztuk" min="1" required><br><br>
 
         <button type="button" id="zapisz_produkt">Zapisz produkt do koszyka</button>
-        <button type="button" id="wyswietl_koszyk">Wyświetl koszyk</button>
-        <button type="button" id="usun_wszystkie_produkty">Usuń wszystkie produkty</button>
-
-        <div id="wynik"></div>
+        <button type="button" id="aktualizuj_produkt" class="aktualizuj_produkt">Aktualizuj produkt</button>
+        <!-- <button type="button" id="wyswietl_koszyk">Wyświetl koszyk</button>
+        <button type="button" id="usun_wszystkie_produkty">Usuń wszystkie produkty</button> -->
     </form>
+    <br>
+    <label for="wyszukiwarka">Wyszukaj produkt:</label>
+    <input type="text" id="wyszukiwarka" name="wyszukiwarka"><br><br>
+    <button type="button" id="wyswietl_koszyk">Wyświetl koszyk</button>
+    <button type="button" id="schowaj_koszyk">Schowaj koszyk</button>
+    <button type="button" id="usun_wszystkie_produkty">Usuń wszystkie produkty</button>
+    
+    <div id="wynik"></div>
+
     <script src="../11.3/script.js"></script>
 </body>
 </html>
