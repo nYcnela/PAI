@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koszyk na produkty</title>
+    <link rel="stylesheet" href="../11.3/style.css">
+</head>
+<body>
+    <h1>Koszyk na produkty</h1>
+    <form action="mailto:test@test.com" method="post">
+        <label for="nazwa_produktu">Nazwa produktu:</label>
+        <input type="text" id="nazwa_produktu" name="nazwa_produktu" required><br><br>
+
+        <label for="cena">Cena:</label>
+        <input type="number" id="cena" name="cena" step="0.01" required><br><br>
+
+        <label for="kolor">Kolor:</label>
+        <input type="text" id="kolor" name="kolor" required><br><br>
+
+        <label for="liczba_sztuk">Liczba sztuk:</label>
+        <input type="number" id="liczba_sztuk" name="liczba_sztuk" min="1" required><br><br>
+
+        <button type="button" id="zapisz_produkt">Zapisz produkt do koszyka</button>
+        <button type="button" id="wyswietl_koszyk">Wyświetl koszyk</button>
+        <button type="button" id="usun_wszystkie_produkty">Usuń wszystkie produkty</button>
+
+        <div id="wynik"></div>
+    </form>
+    <script src="../11.3/script.js"></script>
+</body>
+</html>
